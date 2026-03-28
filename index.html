@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S.</title>
+  <meta name="description" content="AI-native polymath. Ideas that flow across every discipline and turn into real impact.">
+  <meta name="theme-color" content="#111110">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+  <div class="grain"></div>
+
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-name">S.</span>
+      <div class="nav-right">
+        <span class="nav-status"><span class="status-dot"></span> Currently Unavailable</span>
+        <a href="#contact" class="nav-contact">Let's talk</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#missions">Missions</a>
+    <a href="#philosophy">Philosophy</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="mainContent">
+
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-layer" data-speed="-0.15"></div>
+      <div class="hero-orb hero-orb--1" data-speed="-0.3"></div>
+      <div class="hero-orb hero-orb--2" data-speed="-0.2"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-intro cinematic">I am your</p>
+      <h1 class="hero-role" id="morphingRole">
+        <span class="role-text" id="roleText">Co-Founder</span><span class="role-cursor">_</span>
+      </h1>
+      <div class="hero-badge cinematic" data-delay="0.5">
+        AI-native · Co-Founder · Engineer · Researcher
+      </div>
+    </div>
+    <div class="hero-angle"></div>
+  </section>
+
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span class="marquee-content">
+        <span>STRATEGY</span><span class="marquee-dot">◈</span><span>DESIGN</span><span class="marquee-dot">◈</span><span>ENGINEERING</span><span class="marquee-dot">◈</span><span>AI SYSTEMS</span><span class="marquee-dot">◈</span><span>ARCHITECTURE</span><span class="marquee-dot">◈</span><span>QUALITY</span><span class="marquee-dot">◈</span><span>PRODUCT</span><span class="marquee-dot">◈</span><span>R&D</span><span class="marquee-dot">◈</span><span>GROWTH</span><span class="marquee-dot">◈</span><span>DEVOPS</span><span class="marquee-dot">◈</span>
+      </span>
+      <span class="marquee-content" aria-hidden="true">
+        <span>STRATEGY</span><span class="marquee-dot">◈</span><span>DESIGN</span><span class="marquee-dot">◈</span><span>ENGINEERING</span><span class="marquee-dot">◈</span><span>AI SYSTEMS</span><span class="marquee-dot">◈</span><span>ARCHITECTURE</span><span class="marquee-dot">◈</span><span>QUALITY</span><span class="marquee-dot">◈</span><span>PRODUCT</span><span class="marquee-dot">◈</span><span>R&D</span><span class="marquee-dot">◈</span><span>GROWTH</span><span class="marquee-dot">◈</span><span>DEVOPS</span><span class="marquee-dot">◈</span>
+      </span>
+    </div>
+  </div>
+
+
+  <section class="missions-scene" id="missions">
+    <div class="missions-sticky">
+
+      <div class="missions-ui">
+        <span class="missions-step" id="missionsStep">01 / 04</span>
+        <div class="missions-progress"><div class="missions-progress__bar" id="missionsBar"></div></div>
+      </div>
+
+      <div class="mission-slide active" data-mission="0" style="--m-color: var(--cyan);">
+        <span class="mission-number">01</span>
+        <h2 class="mission-title">Build your idea<br>from scratch</h2>
+        <p class="mission-desc">You have a vision but no product. I take it from napkin sketch to shipped MVP, handling design, engineering, and infrastructure end to end.</p>
+        <span class="mission-tag">Zero → One</span>
+      </div>
+      <div class="mission-slide" data-mission="1" style="--m-color: var(--rose);">
+        <span class="mission-number">02</span>
+        <h2 class="mission-title">Embed in<br>your team</h2>
+        <p class="mission-desc">You have an established team that needs a versatile engineer who thinks beyond their ticket. I plug in and raise the ceiling.</p>
+        <span class="mission-tag">Level Up</span>
+      </div>
+      <div class="mission-slide" data-mission="2" style="--m-color: var(--amber);">
+        <span class="mission-number">03</span>
+        <h2 class="mission-title">Lead your<br>tech strategy</h2>
+        <p class="mission-desc">You need a technical co-pilot at the leadership level. Architecture decisions, team structure, build vs. buy. The long view.</p>
+        <span class="mission-tag">Strategic</span>
+      </div>
+      <div class="mission-slide" data-mission="3" style="--m-color: var(--green);">
+        <span class="mission-number">04</span>
+        <h2 class="mission-title">Research &<br>prototype what's next</h2>
+        <p class="mission-desc">You have a "what if" that needs to become a proof of concept. I explore the frontier and come back with something that works.</p>
+        <span class="mission-tag">R&D</span>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="key-strip">
+    <div class="key" id="key">
+      <span class="key-icon">◈</span>
+      <span class="key-hint">Pick me up</span>
+    </div>
+  </div>
+
+
+  <section class="scene philosophy-scene" id="philosophy">
+    <div class="scene-angle scene-angle--top"></div>
+    <div class="container">
+      <div class="philosophy-layout">
+        <div class="philosophy-sticky">
+          <span class="label-mono reveal">Philosophy</span>
+          <h2 class="scene-title reveal">
+            Ideas should<br>touch everything.
+          </h2>
+          <p class="editorial-accent reveal">Not stay in a silo.</p>
+        </div>
+        <div class="philosophy-scroll">
+          <div class="philosophy-block reveal">
+            <p class="philosophy-text">
+              I don't think in departments. A good idea about the product should
+              inform the architecture. A constraint in engineering should reshape
+              the design. The best outcomes happen when someone can hold the whole
+              picture at once and actually act on all of it.
+            </p>
+          </div>
+          <div class="philosophy-block reveal">
+            <p class="philosophy-text">
+              That's what drives me. Not efficiency for its own sake, but the
+              satisfaction of watching an idea ripple across an entire business
+              and turn into something real. I've been a founder, an engineer, a
+              designer, a tester. Not because I was filling seats, but because
+              I <em>wanted to be in the room</em> where each of those decisions was made.
+            </p>
+          </div>
+          <div class="philosophy-block reveal">
+            <p class="philosophy-text philosophy-text--highlight">
+              When ideas can flow freely across every discipline instead of
+              getting lost in handoffs, the impact compounds. That's how I work.
+            </p>
+          </div>
+          <div class="philosophy-values">
+            <div class="value reveal">
+              <span class="value__marker"></span>
+              <div><strong>Impact over output</strong><p>I measure my work by what changed, not what shipped.</p></div>
+            </div>
+            <div class="value reveal">
+              <span class="value__marker"></span>
+              <div><strong>Ideas without borders</strong><p>The best thinking crosses every discipline.</p></div>
+            </div>
+            <div class="value reveal">
+              <span class="value__marker"></span>
+              <div><strong>Ownership, not territory</strong><p>I care about the outcome, not whose job it is.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="marquee marquee--reverse">
+    <div class="marquee-track">
+      <span class="marquee-content">
+        <span>IDEAS INTO IMPACT</span><span class="marquee-dot">◈</span><span>CROSS-DISCIPLINARY</span><span class="marquee-dot">◈</span><span>AI-AUGMENTED</span><span class="marquee-dot">◈</span><span>ZERO TO ONE</span><span class="marquee-dot">◈</span><span>FULL OWNERSHIP</span><span class="marquee-dot">◈</span><span>NO SILOS</span><span class="marquee-dot">◈</span><span>FOUNDER MINDSET</span><span class="marquee-dot">◈</span><span>OUTCOME DRIVEN</span><span class="marquee-dot">◈</span>
+      </span>
+      <span class="marquee-content" aria-hidden="true">
+        <span>IDEAS INTO IMPACT</span><span class="marquee-dot">◈</span><span>CROSS-DISCIPLINARY</span><span class="marquee-dot">◈</span><span>AI-AUGMENTED</span><span class="marquee-dot">◈</span><span>ZERO TO ONE</span><span class="marquee-dot">◈</span><span>FULL OWNERSHIP</span><span class="marquee-dot">◈</span><span>NO SILOS</span><span class="marquee-dot">◈</span><span>FOUNDER MINDSET</span><span class="marquee-dot">◈</span><span>OUTCOME DRIVEN</span><span class="marquee-dot">◈</span>
+      </span>
+    </div>
+  </div>
+
+
+  <section class="scene work-scene" id="work">
+    <div class="scene-angle scene-angle--top"></div>
+    <div class="container">
+      <span class="label-mono cinematic">Selected Work</span>
+
+      <article class="project reveal">
+        <div class="project-meta">
+          <span class="project-number">01</span>
+          <div class="project-roles">
+            <span class="role-tag role-tag--cto">Product</span>
+            <span class="role-tag role-tag--engineer">Full-Stack</span>
+            <span class="role-tag role-tag--rd">R&D</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-info">
+            <h3 class="project-title">Machine Perception Index</h3>
+            <p class="project-desc">A modular platform for measuring how frontier LLMs perceive and represent entities. Broadcasts questions to 9 models in parallel, scores responses across 10 perception pillars, and generates academic-grade reports. Built to optimize for RAG instead of traditional SEO.</p>
+            <div class="project-result"><span class="result-number">9</span><span class="result-label">frontier models in parallel</span></div>
+          </div>
+          <div class="project-visual" data-tilt style="--project-gradient: linear-gradient(135deg, #8a7060, #c4956a);"><img src="images/mpi.png" alt="Machine Perception Index"></div>
+        </div>
+      </article>
+
+      <article class="project project--reverse reveal">
+        <div class="project-meta">
+          <span class="project-number">02</span>
+          <div class="project-roles">
+            <span class="role-tag role-tag--founder">Architect</span>
+            <span class="role-tag role-tag--engineer">AI Engineer</span>
+            <span class="role-tag role-tag--designer">QA</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-visual" data-tilt style="--project-gradient: linear-gradient(135deg, #bfa060, #c07a72);"><img src="images/reportit.png" alt="ReportIt CT"></div>
+          <div class="project-info">
+            <h3 class="project-title">ReportIt CT</h3>
+            <p class="project-desc">A WhatsApp chatbot that lets Cape Town residents submit municipal service requests through natural conversation. Designed for communities where digital literacy and stable internet are barriers. Residents go from first message to submitted ticket in under 3 minutes, at zero cost.</p>
+            <div class="project-result"><span class="result-number">4.7M</span><span class="result-label">residents addressable via WhatsApp</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-meta">
+          <span class="project-number">03</span>
+          <div class="project-roles">
+            <span class="role-tag role-tag--rd">R&D</span>
+            <span class="role-tag role-tag--engineer">Engineer</span>
+            <span class="role-tag role-tag--cto">Crypto</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-info">
+            <h3 class="project-title">Axion Network</h3>
+            <p class="project-desc">A post-quantum Layer 1 built in Rust. Uses NIST-standardized quantum-safe cryptography from genesis, not as an upgrade patch. Replaces gas fees with a reputation-weighted Proof of Utility consensus, and uses a DAG structure instead of a linear chain for faster throughput.</p>
+            <div class="project-result"><span class="result-number">PQC</span><span class="result-label">quantum-safe from day one</span></div>
+          </div>
+          <div class="project-visual" data-tilt style="--project-gradient: linear-gradient(135deg, #6aaa9e, #8a7060);"><img src="images/axion.png" alt="Axion Network"></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+  <div class="lock-strip">
+    <div class="lock" id="lock">
+      <span class="lock-icon">◇</span>
+      <span class="lock-hint">Place the key here</span>
+    </div>
+  </div>
+
+
+  <section class="scene contact-scene" id="contact">
+    <div class="scene-angle scene-angle--top"></div>
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-left">
+          <h2 class="scene-title cinematic">Tell me what<br>you're building.</h2>
+          <p class="contact-subtitle reveal">Whether you need someone across every discipline or a versatile engineer who thinks like a founder, let's talk.</p>
+        </div>
+        <div class="contact-right reveal">
+          <a href="mailto:shirag@frothyhog.com" class="contact-link">
+            <span class="contact-link__label">Email</span><span class="contact-link__value">shirag@frothyhog.com</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <a href="https://github.com/thetrueshags" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link__label">GitHub</span><span class="contact-link__value">@thetrueshags</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/shirag-maharaj" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link__label">LinkedIn</span><span class="contact-link__value">/in/shirag-maharaj</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Shirag</span>
+      <span class="footer-tagline">Built by one person. Guess which role.</span>
+    </div>
+  </footer>
+
+  </main>
+
+
+  <div class="portal" id="portal">
+    <div class="portal-bar" id="portalBar">
+      <span class="portal-bar__title">⚔ The Other Side</span>
+      <button class="portal-close" id="portalClose">×</button>
+    </div>
+    <div class="portal-view">
+      <div class="portal-world" id="portalWorld"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
