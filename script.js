@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  const AVAILABLE = false; // toggle
+  const AVAILABLE = true; // toggle
   const statusDot = document.querySelector('.status-dot');
   const statusEl = document.querySelector('.nav-status');
   if (statusDot && statusEl) {
